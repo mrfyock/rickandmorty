@@ -8,6 +8,7 @@ import About from './pages/About/About'
 // import Episodes from './pages/Episodes/Episodes'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Episodes from './pages/Episodes/Episodes'
+import CharacterDetails from './pages/CharacterDetails/CharacterDetails'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Homepage />} />
         <Route path='/about' element={<About />} />
+        <Route path='/details/:characterId' element={<CharacterDetails />} />
         <Route path='/episodes' element={<Episodes />} />
       </Routes>
     
